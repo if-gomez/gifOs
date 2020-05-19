@@ -1,0 +1,651 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  font-size: 12px;
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .arrow {
+  margin-right: 20px;
+}
+
+nav button {
+  width: 131px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+nav button:active, nav button:hover {
+  border-style: dashed;
+}
+
+nav .themeBtns .dropdown {
+  width: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .theme-options {
+  list-style: none;
+  width: 170px;
+  height: 102px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 74px;
+  top: 97px;
+  visibility: hidden;
+}
+
+nav .theme-options li {
+  width: 150px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general .create-guifos {
+  width: 684px;
+  height: 386px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-top: 50px;
+}
+
+.general .create-guifos img {
+  position: relative;
+  top: 35px;
+  left: 25px;
+}
+
+.general .create-guifos .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.general .create-guifos h5 {
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.general .create-guifos p {
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 24px;
+  width: 518px;
+  margin-left: 70px;
+  margin-bottom: 15px;
+}
+
+.general .create-guifos p span {
+  font-weight: 700;
+}
+
+.general .create-guifos p .span-guifo {
+  font-style: italic;
+}
+
+.general .create-guifos div button {
+  width: 144px;
+  height: 36px;
+  font-size: 16px;
+}
+
+.general .create-guifos .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.general .create-guifos .buttons button {
+  margin-right: 10px;
+}
+
+.general .record-gif {
+  margin-top: 50px;
+  width: 860px;
+  height: 548px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.general .record-gif .top-bar {
+  width: 100%;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.general .record-gif .top-bar h4 {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.general .record-gif .gif {
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  width: 838px;
+  height: 440px;
+  margin: 10px auto 10px auto;
+}
+
+.general .record-gif .gif img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.general .record-gif .gif .globe {
+  width: auto;
+  height: auto;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.general .record-gif .gif .btns {
+  margin-top: 20px;
+}
+
+.general .record-gif .gif video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.general .record-gif .gif .loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.general .record-gif .gif .loading img {
+  margin-bottom: 10px;
+}
+
+.general .record-gif .gif .loading h4 {
+  margin-bottom: 40px;
+}
+
+.general .record-gif .gif .loading .loading-bar {
+  width: 324px;
+  height: 24px;
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+          box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+  margin-bottom: 10px;
+}
+
+.general .record-gif .gif .loading p {
+  font-size: 12px;
+  color: rgba(17, 0, 56, 0.64);
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.general .record-gif .gif .loading p span {
+  text-decoration: line-through;
+}
+
+.general .record-gif .btns .btns-capture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.general .record-gif .btns .btns-capture .button-pink {
+  width: 144px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.general .record-gif .btns .btns-capture .img-capture {
+  width: 36px;
+  height: 36px;
+}
+
+.general .record-gif .btns .btns-stop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+}
+
+.general .record-gif .btns .btns-stop .timer {
+  width: 124px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general .record-gif .btns .btns-stop div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.general .record-gif .btns .btns-stop div .stop {
+  background: #FF6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  width: 144px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.general .record-gif .btns .btns-stop div .img {
+  width: 36px;
+  height: 36px;
+}
+
+.general .record-gif .btns .upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.general .record-gif .btns .upload div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general .record-gif .btns .upload .timer {
+  width: 124px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.general .record-gif .btns .upload .img {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general .record-gif .btns .upload .loading-bar {
+  width: 240px;
+  height: 24px;
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+          box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general .record-gif .btns .upload .loading-bar div {
+  width: 14px;
+  height: 20px;
+  background: #999999;
+  border: 0.5px solid #c3c1c1;
+}
+
+.general .record-gif .btns .upload .btns {
+  margin-right: 10px;
+}
+
+.general .record-gif .btns .upload .btns button {
+  width: 144px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.general .record-gif .btns .upload .btns .button-white {
+  margin-right: 10px;
+}
+
+.general .record-gif .btns .cancel {
+  width: 144px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  float: right;
+  margin-right: 10px;
+}
+
+.success {
+  width: 721px;
+  height: 391px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.success .top-bar {
+  width: 100%;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+.success .top-bar h4 {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.success .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success .test .mini-gif {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  width: 371px;
+  height: 196px;
+  margin: 40px 25px 50px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success .test .mini-gif img {
+  width: 365px;
+  height: 191px;
+}
+
+.success .test div .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.success .test div .btns button {
+  width: 256px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+.success .test div .btns .link {
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+  text-align: center;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.success button {
+  width: 144px;
+  height: 36px;
+  float: right;
+  margin-right: 40px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.divider {
+  width: 1200px;
+  height: 32px;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin: auto;
+  margin-top: 100px;
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin: 100px auto 0px auto;
+}
+
+.mis-guifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mis-guifos img {
+  margin: 20px 5px;
+}
+
+.delete-storage {
+  width: 144px;
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin: 10px 75px;
+}
+
+.no-display {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

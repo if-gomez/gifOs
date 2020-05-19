@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/light-theme.css" id="linkTheme">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap" rel="stylesheet">
+    <title>Crear guifos</title>
+</head>
+<body>
+    <header class="top-bar">
+        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+    </header>
+
+    <nav>
+        <div>
+            <a href="../index.html" class="arrow"><img src="./../img/arrow.svg" alt="Arrow"></a>
+            <a href="upload.html"><img src="./../img/gifOF_logo_light.png" alt="Logo" id="logo"></a>
+        </div>
+        <div class="themeBtns">
+            <button class="button-pink" id="btnTheme">Elegir tema</button>
+            <button class="button-pink dropdown" id="dropdownTheme"><img src="../img/dropdown.svg" alt="Dropdown"></button>
+            <ul id="themeOptions" class="theme-options">
+                <li class="li-active" id="lightTheme"><span class="span-active">S</span>ailor Day</li>
+                <li id="darkTheme"><span>S</span>ailor Night</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="general" id="general">
+        <div class="create-guifos">
+            <div class="top-bar">
+                <h4>Crear Guifos</h4>
+            </div>
+            <img src="./../img/window_img.png" alt="">
+            <h5>Aquí podrás crear tus propios guifos</h5>
+            <p>
+                Crear tu <span class="span-guifo">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son: <br> <br>
+                <span>1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+                <span>2)</span> Capturar tu momento guifo <br>
+                <span>3)</span> Revisar el momento <br>
+                <span>4)</span> Listo para subir y compartir! <br> <br>
+                ¿Quieres comenzar a crear tu <span class="span-guifo">guifo</span> ahora?
+            </p>
+            <div class="buttons">
+                <button class="button-white" onclick="homeLink()">Cancelar</button>
+                <button class="button-pink" onclick="insertRecordGif()">Comenzar</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider no-display" id="misGuifosDivider">Mis guifos</div>
+
+    <div class="mis-guifos" id="misGuifos"></div>
+
+    <script src="./app/app.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</body>
+</html>

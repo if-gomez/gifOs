@@ -1,0 +1,413 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header h5 {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 100;
+  margin-left: 5px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto 20px auto;
+  width: 1200px;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav div .button-pink {
+  width: 144px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 15px;
+}
+
+nav div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav div div .button-pink {
+  margin-right: 0px;
+}
+
+nav div div .dropdown {
+  width: 36px;
+  margin-right: 15px;
+}
+
+nav div div ul {
+  list-style: none;
+  width: 180px;
+  height: 102px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 36px;
+}
+
+nav div div ul li {
+  width: 150px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+nav div button {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  background: none;
+  border: none;
+}
+
+nav div button:hover {
+  border: 1px solid #110038;
+  border-style: dotted;
+}
+
+nav div button:active {
+  font-size: 16px;
+  color: gray;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+nav div button span {
+  border-bottom: 1px solid;
+}
+
+nav div button span:active {
+  color: gray;
+}
+
+.no-display {
+  display: none;
+}
+
+.search-bar {
+  width: 1200px;
+  height: 99px;
+  margin: 0px auto 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-bar .top-bar {
+  width: 100%;
+  height: 24px;
+  padding-left: 5px;
+  font-weight: 700;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.search-bar .input-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -30px;
+}
+
+.search-bar .input-btn input {
+  width: 1057px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.search-bar .input-btn button {
+  width: 102px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-bar .input-btn button img {
+  margin-right: 10px;
+}
+
+.search-bar .input-btn .btn-inactive {
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.search-suggest {
+  width: 1200px;
+  height: 160px;
+  position: absolute;
+  margin-top: 99px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.search-suggest li {
+  list-style: none;
+  margin-left: 10px;
+  width: 1057px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.search-suggest li:hover {
+  cursor: pointer;
+}
+
+.tag-related {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 18px;
+  display: none;
+}
+
+.tag-related .btn-tag {
+  height: 34px;
+  width: auto;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  padding: 4px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.divider {
+  width: 1200px;
+  height: 32px;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin: auto;
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.suggest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.suggest .gif-suggest {
+  width: 288px;
+  height: 312px;
+  position: relative;
+  margin: 20px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.suggest .gif-suggest .top-bar {
+  width: 287px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
+  -webkit-box-shadow: inset -2px -1px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -1px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.suggest .gif-suggest .top-bar h5 {
+  font-weight: 700;
+}
+
+.suggest .gif-suggest .gif-suggest-img {
+  width: 280px;
+  height: 280px;
+}
+
+.suggest .gif-suggest .btn-blue {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 81px;
+  height: 34px;
+}
+
+.trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.trending .gif-trending {
+  margin: 5px;
+  width: 288px;
+  height: 298px;
+  position: relative;
+}
+
+.trending .gif-trending .border {
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  border: 1px solid #110038;
+  border-style: dotted;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.trending .gif-trending img {
+  width: 288px;
+  height: 298px;
+  position: absolute;
+}
+
+.trending .gif-trending .top-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  font-weight: 700;
+  padding-left: 5px;
+  z-index: 2;
+  height: 24px;
+  overflow: hidden;
+}
+/*# sourceMappingURL=styles.css.map */

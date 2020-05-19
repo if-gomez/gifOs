@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/light-theme.css" id="linkTheme">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap" rel="stylesheet">
+    
+    <title>Proyecto gifOs</title>
+</head>
+<body>
+    <header class="top-bar">
+        <h5>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h5>
+    </header>
+
+    <nav>
+        <a href="index.html"><img src="./img/gifOF_logo_light.png" alt="Logo" id="logo"></a>
+        <div>
+            <button class="button-pink" id="createGuifos">Crear guifos</button>
+            <div>
+                <button class="button-pink" id="btnTheme">Elegir tema</button>
+                <button class="button-pink dropdown" id="dropdownTheme"><img src="./img/dropdown.svg" alt="Dropdown" ></button>
+                <ul class="no-display" id="themeOptions">
+                    <li class="li-active" id="lightTheme"><span class="span-active">S</span>ailor Day</li>
+                    <li id="darkTheme"><span>S</span>ailor Night</li>
+                </ul>
+            </div>
+            <button id="misGuifos"><span>M</span>is guifos</button>
+        </div>
+    </nav>
+
+    <div class="search-bar">
+        <div class="top-bar">Buscar</div>
+        <div class="input-btn">
+            <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="inputSearchBar">
+            <button class="btn-inactive" id="btnSearchBar"><img src="./img/lupa_inactive.svg" alt="Lupa">Buscar</button>
+        </div>
+        <ul class="search-suggest" id="searchSuggest">
+            <li id="messi">Messi</li>
+            <li id="cuarentena">Cuarentena</li>
+            <li id="peppa">Peppa Pig</li>
+        </ul>
+    </div>
+    
+
+    <div class="tag-related">
+        <div class="btn-tag">#Un ejemplo</div>
+        <div class="btn-tag">#Un ejemplo</div>
+        <div class="btn-tag">#Un ejemplo</div>
+    </div>
+    
+    <div class="divider" id="dividerSuggest">Hoy te sugerimos:</div>
+
+    <div class="suggest" id="suggest">
+        <div class="gif-suggest">
+            <div class="top-bar" id="topBarsimpson">
+                <img src="./img/button3.svg" alt="Button" id="simpsonImg">
+            </div>
+            <img src="#" class="gif-suggest-img" alt="Suggest" id="simpson">
+            <button class="btn-blue" id="simpsonBtn">Ver más…</button>
+        </div>
+        <div class="gif-suggest">
+            <div class="top-bar" id="topBarrick&morty">
+                <img src="./img/button3.svg" alt="Suggest" id="rick&mortyImg">
+            </div>
+            <img src="#" class="gif-suggest-img" alt="Suggest" id="rick&morty">
+            <button class="btn-blue" id="rick&mortyBtn">Ver más…</button>
+        </div>
+        <div class="gif-suggest">
+            <div class="top-bar" id="topBartoystory">
+                <img src="./img/button3.svg" alt="Button" id="toystoryImg">
+            </div>
+            <img src="#" class="gif-suggest-img" alt="" id="toystory">
+            <button class="btn-blue" id="toystoryBtn">Ver más…</button>
+        </div>
+        <div class="gif-suggest">
+            <div class="top-bar" id="topBarshrek">
+                <img src="./img/button3.svg" alt="Button" id="shrekImg">
+            </div>
+            <img src="#" class="gif-suggest-img" alt="Suggest" id="shrek">
+            <button class="btn-blue" id="shrekBtn">Ver más…</button>
+        </div>
+        
+    </div>
+
+    <div class="divider" id="dividerTrending">Tendencias:</div>
+
+    <div class="trending" id="trendingSection"></div>
+    
+    <script src="./app/app.js"></script>
+</body>
+</html>
