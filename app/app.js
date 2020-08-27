@@ -1,29 +1,5 @@
-const myFetch = {
-    apiKey: 'KdpBg8wKgDfANjp24Bz6PdBnCfJzY8SF',
-    
-    getTrending: function (){
-        const data = fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${this.apiKey}&limit=25&rating=G`)
-            .then(res => res.ok ? Promise.resolve(res) : Promise.reject(res))
-            .then(res => res.json())
-            .then(res => {
-                const {data} = res;
-                return data
-            })
-            .catch(rej => console.error(rej));
-        return data
-    },
-    search: function (search){
-        const data = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${this.apiKey}&q=${search}&limit=25&offset=0&rating=G&lang=en`)
-            .then(res => res.ok ? Promise.resolve(res) : Promise.reject(res))
-            .then(res => res.json())
-            .then(res => {
-                const {data} = res;
-                return data
-            })
-            .catch(rej => console.error(rej));
-        return data
-    }
-};
+import { getTrending, search } from "./modules/services/services.js";
+
 
 //Renderizar tendencias
 const trendingSection = document.getElementById('trendingSection');
@@ -50,10 +26,10 @@ const renderGif = (data) => {
             divTopBar.className = 'no-display';
             divBorder.className = 'no-display';
         });
-        }
+    }
 };
 window.addEventListener('load', async () => {
-    const data = await myFetch.getTrending()
+    const data = await getTrending()
     renderGif(data);
 });
 
@@ -64,7 +40,7 @@ const suggestList = ['simpson', 'rick&morty', 'toystory', 'shrek'];
 
 const renderSuggest = async (sug) => {
     const sugGif = document.getElementById(sug)
-    const data = await myFetch.search(sug);
+    const data = await search(sug);
     sugGif.src = data[0].images.fixed_height.url;
     changeTitle(sug, data);
 };
@@ -73,21 +49,21 @@ const changeTitle = (sug, data) => {
     const img = document.getElementById(`${sug}Img`)
     document.getElementById(`topBar${sug}`)
         .insertBefore(title, img)
-    title.textContent = `#${data[0].title}`.replace(/ /g, '');  
+    title.textContent = `#${data[0].title}`.replace(/ /g, '');
 };
 const cleanSection = () => {
     trendingSection.innerHTML = '';
 };
 const seeAllSuggest = async (i) => {
-    const data = await myFetch.search(i);
+    const data = await search(i);
     renderGif(data);
 };
 const seeMore = (i) => {
     document.getElementById(`${i}Btn`)
-    .addEventListener('click', () => {
-        cleanSection();
-        seeAllSuggest(i);
-    });
+        .addEventListener('click', () => {
+            cleanSection();
+            seeAllSuggest(i);
+        });
 };
 window.addEventListener('load', async () => {
     for (const i of suggestList) {
@@ -108,14 +84,14 @@ input.addEventListener('click', () => {
     searchSuggestActive();
 })
 btnSearchBar.addEventListener('click', async () => {
-    const data = await myFetch.search(input.value);
+    const data = await search(input.value);
     cleanSection();
     cleanSuggest();
     renderGif(data);
     btnInactive();
     dividerTrendingText();
     searchSuggestInactive();
-    if(data.length == 0){
+    if (data.length == 0) {
         trendingSection.innerText = 'No hay resultados para tu búsqueda';
     };
     console.log(data);
@@ -139,7 +115,7 @@ searchSuggest.addEventListener('mouseleave', searchSuggestInactive)
 
 document.getElementById('messi')
     .addEventListener('click', async () => {
-        const data = await myFetch.search('messi');
+        const data = await search('messi');
         cleanSection();
         cleanSuggest();
         renderGif(data);
@@ -149,17 +125,17 @@ document.getElementById('messi')
 
 document.getElementById('cuarentena')
     .addEventListener('click', async () => {
-        const data = await myFetch.search('cuarentena');
+        const data = await search('cuarentena');
         cleanSection();
         cleanSuggest();
         renderGif(data);
         dividerTrendingText();
         searchSuggestInactive();
     });
-    
+
 document.getElementById('peppa')
     .addEventListener('click', async () => {
-        const data = await myFetch.search('peppa pig');
+        const data = await search('peppa pig');
         cleanSection();
         cleanSuggest();
         renderGif(data);
@@ -173,7 +149,7 @@ const cleanSuggest = () => {
     document.getElementById('dividerSuggest').className = 'no-display';
 };
 const dividerTrendingText = () => {
-    dividerTrending.textContent = 'Resultados para tu busqueda: '+ input.value.toUpperCase();
+    dividerTrending.textContent = 'Resultados para tu busqueda: ' + input.value.toUpperCase();
 };
 //Cambiar tema
 const themeOptions = document.getElementById('themeOptions');
@@ -186,8 +162,8 @@ const showOptions = () => {
 };
 const hideOptions = () => {
     themeOptions.addEventListener('mouseleave', () => {
-            themeOptions.className = 'no-display';
-        })
+        themeOptions.className = 'no-display';
+    })
 };
 document.getElementById('btnTheme')
     .addEventListener('click', () => {
@@ -209,9 +185,9 @@ lightTheme.addEventListener('click', () => {
     changeLogo('light');
 })
 darkTheme.addEventListener('click', () => {
-        showTheme('dark');
-        darkThemeActive();
-        changeLogo('dark');
+    showTheme('dark');
+    darkThemeActive();
+    changeLogo('dark');
 });
 const lightThemeActive = () => {
     darkTheme.removeAttribute('class');
